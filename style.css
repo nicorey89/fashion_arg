@@ -17,7 +17,8 @@ body{
 header{
     z-index: 999;
     position: fixed;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background-color: grey;
     top: 0;
     left: 0;
     width: 100%;
@@ -28,12 +29,9 @@ header{
     transition: 0.5s ease;
 }
 
-header .name{
-    color: #fff;
-    font-size: 1.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
+header .name img{
+    width: 400px;
+    height: 80px;
 }
 
 header .navigation{
