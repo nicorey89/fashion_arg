@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #000;
+} 
+
+header{
+    z-index: 999;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+header .name{
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header .navigation{
+    position: relative;
+}
+header .navigation a{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+}
+header .navigation a:hover{
+    color: #3a6cf4;
+}
+
+main{
+    color: #fff;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+}
+
+@media (max-width: 1040px){
+
+    header{
+        padding: 12px 20px;
+    }
+    
+    header .navigation{
+        display: none;
+    }
+      /* ********************menu header responsive****************** */
+    .menu-btn{
+        position: absolute;
+        background: url(images/menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(images/close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+        filter: invert(1);  /* La propiedad CSS filter dota de efectos gráficos como el desenfoque o cambio de color en la representación antes de que se muestre el elemento. Los filtros se utilizan comúnmente para ajustar la representación de imágenes, fondos o bordes. */
+    }
+
+    header .navigation.active{
+        z-index: 888;
+        position: fixed;
+        background-color: #fff;
+        top: 0;
+        right: 0;
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+        transition: 0.3s ease;
+    }
+    header .navigation a{
+        color: #000;
+        font-size: 1.2em;
+        margin: 10px;
+        padding: 0 20px;
+        border-radius: 20px;
+    }
+    
+    header .navigation a:hover{
+        background: #3a6cf4;
+        color: #fff;
+        transition: 0.3s ease;
+    }
+      
+}
