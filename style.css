@@ -7,7 +7,7 @@
 }
 
 body{
-    min-height: 110vh;
+    min-height: 150vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,16 +22,17 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 200px;
+    padding: 15px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s ease;
 }
 
+
 header .name img{
-    width: 400px;
-    height: 80px;
+    width: 300px;
+    height: 60px;
 }
 
 header .navigation{
@@ -50,10 +51,41 @@ header .navigation a:hover{
 
 main{
     color: #fff;
-    margin-top: 7rem;
+    width: 90%;
+    margin: 7rem auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.display{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.video-container{
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    width: 200px;
+    height: 180px;
+    margin: 10px;
+}
+
+.video-container:hover{
+    border: 3px solid gold;
+}
+
+.video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 footer{
@@ -72,6 +104,12 @@ footer{
     header .navigation{
         display: none;
     }
+
+    header .name img{
+        width: 250px;
+        height: 50px;
+    }
+
       /* ********************menu header responsive****************** */
     .menu-btn{
         position: absolute;
@@ -122,5 +160,32 @@ footer{
         color: #fff;
         transition: 0.3s ease;
     }
+
+    .display{
+        margin-top: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
       
+    .video-container{
+        position: relative;
+        overflow: hidden;
+        border: 1.5px solid white;
+        border-radius: 5px;
+        width: 90%;
+        height: 250px;
+        margin: 10px;
+    }
+
+    .video-container:hover{
+        border: 3px solid gold;
+    }
+
+    main{
+        margin-top: 7rem;
+        align-items: center;
+        flex-direction: column;
+    }
 }
