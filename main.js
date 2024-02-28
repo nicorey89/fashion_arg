@@ -13,3 +13,17 @@ menuBtn.addEventListener("click",  () => {
       navigation.classList.remove("active");
     });
   });
+
+
+function abrirModal() {
+  document.querySelector("#modal").style.display = 'block';
+}
+
+
+function cerrarModal() {
+  document.querySelector("#modal").style.display = 'none';
+}
+
+document.querySelector(".boton").addEventListener("click", function() {
+  window.location.href = "https://fashion-arte.vercel.app";
+});

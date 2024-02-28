@@ -10,11 +10,30 @@
 </head>
 <body>
     <header>
-        <a href="https://fashion-arte.vercel.app" class="name"><img src="./images/logo.png" alt=""></a>
+        <a href="https://fashion-arte.vercel.app" class="name">
+            <img class="logo" src="./images/logo.png" alt="">
+        </a>
         <div class="menu-btn"></div>
         <div class="navigation">
             <a href="#main">Home</a> 
-            <a href="#">iniciar session</a>
+                <button class="botonModal" onclick="abrirModal()">Iniciar sesion</button>
+                <div id="modal" class="modal">
+                    <div class="contenidoModal">
+                        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                            <form class="formulario" action="/login" method="post">
+                                <input type="text" name="username" placeholder="Nombre de usuario" required>
+                                <input type="password" name="password" placeholder="Contraseña" required>
+                                <div class="botonesLogin">
+                                    <button class="google">
+                                        <a href="https://fashion-arte.vercel.app">
+                                            <img src="./images/google.png" alt="">
+                                        </a>
+                                    </button>
+                                    <input class="boton" type="submit" value="Iniciar sesión">
+                                </div>
+                            </form>
+                    </div>
+                </div>
             <a href="#">registrate</a>
         </div>
     </header>

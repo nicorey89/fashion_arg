@@ -6,6 +6,13 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --smallLetter: "Georgia",serif;
+    --bigLetter: "Helvetica Neue",Helvetica,sans;
+    --black: #000;
+    --white: #fff;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -30,7 +37,7 @@ header{
 
 header .name img{
     width: 300px;
-    height: 60px;
+    height: 70px;
 }
 
 header .navigation{
@@ -46,6 +53,108 @@ header .navigation a{
 header .navigation a:hover{
     color: goldenrod;
 }
+
+img.logo{
+    height: auto;
+   object-fit: cover; 
+}
+/* aqui empieza el modal */
+
+.botonModal{
+    background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  margin-left: 30px;
+  
+}
+
+header .modal{
+  display: none; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: fixed;
+  top: 15%;
+}
+
+.contenidoModal {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+  }
+  
+  .cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* aqui termina el modal */
+
+  /* formulario inicio */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50%;
+  }
+
+.formulario input{
+    width: 50%;
+    margin: 5px;
+    min-width: 50%;
+}
+
+.formulario input{
+    text-align: center;
+}
+
+
+.botonesLogin{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    min-width: 50%;
+    align-items: center;
+}
+.formulario input.boton{
+    height: 75px;
+    min-width: 50%;
+}
+
+.google{
+    height: 75px;
+}
+
+.formulario .google a{
+    margin-left: 0;
+}
+
+.google a img{
+    object-fit: contain;
+    width: 150px;
+    height: 50px;
+}
+
+/* formulario fin */
 
 main{
     color: #fff;
@@ -111,6 +220,41 @@ footer{
         width: 250px;
         height: 50px;
     }
+
+    /* modal inicio */
+
+
+    .contenidoModal{
+        width: 75%;
+    }
+
+    form.formulario{
+        width: 100%;
+    }
+    .formulario .google a{
+        margin-left: 0;
+    }
+    
+    .google a img{
+        object-fit: contain;
+        width: 50%;
+        height: 50px;
+    }
+
+    button.google{
+        min-width: 100px;
+    }
+
+    input.boton{
+        text-overflow: ellipsis;
+        min-width: 100px !important;
+    }
+
+    button.google a{
+        margin: 0 !important;
+    }
+
+    /* modal fin */
 
       /* ********************menu header responsive****************** */
     .menu-btn{
@@ -202,4 +346,32 @@ footer{
         align-items: center;
         flex-direction: column;
     }
+}
+
+@media (max-width: 425px){
+
+    
+    
+    .formulario{
+        flex-direction: column;
+    }
+    
+    .formulario .botonesLogin{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .formulario input{
+        width: 100%;
+    }
+
+    .formulario .google{
+        width: 100%;
+    }
+
+    .formulario input.boton{
+        width: 100%;
+    }
+
 }
