@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <title>FashionArte</title>
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="profileHeader">
+        <a href="https://fashion-arte.vercel.app" class="name">
+            <img class="logo" src="./images/logo.png" alt="">
+        </a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="#main">Home</a> 
+                <button class="botonModal" onclick="abrirModal()">Iniciar sesion</button>
+                <div id="modal" class="modal">
+                    <div class="contenidoModal">
+                        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                            <form class="formulario" action="/login" method="post">
+                                <input type="text" name="username" placeholder="Nombre de usuario" required>
+                                <input type="password" name="password" placeholder="Contraseña" required>
+                                <div class="botonesLogin">
+                                    <button class="google">
+                                        <a href="https://fashion-arte.vercel.app">
+                                            <img src="./images/google.png" alt="">
+                                        </a>
+                                    </button>
+                                    <input class="boton" type="submit" value="Iniciar sesión">
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            <a href="#">registrate</a>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <section class="perfil">
+            
+                <form action="" class="formularioPerfil cajaPerfil">
+                    <label for="">email
+                        <input type="email" name="" id="">
+                    </label>
+                    <label for="">pass
+                        <input type="password" name="" id="">
+                    </label>
+                </form>
+            
+            <div>
+                <img src="./images/moda.webp" alt="" class="imagenPerfil">
+            </div>
+        </section>
+        <div class="botoncito">
+            <button class="masBoton">Actualizar perfil</button>
+        </div>
+
+        <h1> mis videos subidos </h1>
+        <hr class="linea-negra">
+        
+            <section class="display displayPerfil">
+                <div class="video-container">
+                    <img src="./images/imagen-video.jpg" alt="">
+                </div>
+                <div class="video-container">
+                    <img src="./images/imagen-video.jpg" alt="">
+                </div>
+                <div class="video-container">
+                    <img src="./images/imagen-video.jpg" alt="">
+                </div>
+                <div class="video-container">
+                    <img src="./images/imagen-video.jpg" alt="">
+                </div>
+            </section>
+        
+    </main>
+    <footer class="footerPerfil">
+        <h2>Copyright @2024. All Rights Reserved.</h2>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
