@@ -13,6 +13,7 @@
     --white: #fff;
 }
 
+
 body{
     display: flex;
     flex-direction: column;
@@ -24,7 +25,7 @@ header{
     z-index: 999;
     position: fixed;
     background: rgba(255, 255, 255, 0.1); 
-   /*  background-color: grey; */
+    background-color: grey;
     top: 0;
     left: 0;
     width: 100%;
@@ -48,11 +49,24 @@ header .navigation a{
     font-size: 1em;
     font-weight: 500;
     text-decoration: none;
-    margin-left: 30px;
 }
 header .navigation a:hover{
     color: goldenrod;
 }
+header .redes-sociales{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+header .redes-sociales div{
+    margin-top: 20px;
+}
+header .redes-sociales a{
+    padding: 10px 20px;
+    margin: 20px;
+}
+
 
 img.logo{
     height: auto;
@@ -206,6 +220,14 @@ footer{
     padding: 2em;
 }
 
+footer a{
+    color: #fff;
+    margin: 10px;
+}
+footer a:hover{
+    color: goldenrod;
+}
+
 @media (max-width: 1040px){
 
     header{
@@ -305,8 +327,6 @@ footer{
     
     header .navigation a:hover{
         color: goldenrod;
-        transition: 0.2s ease;
-        border-top: 2px solid goldenrod;
     }
 
     .display{
