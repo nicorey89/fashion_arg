@@ -5,22 +5,18 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
-
 :root{
     --smallLetter: "Georgia",serif;
     --bigLetter: "Helvetica Neue",Helvetica,sans;
     --black: #000;
     --white: #fff;
 }
-
-
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: #fff;
 } 
-
 header{
     z-index: 999;
     position: fixed;
@@ -34,8 +30,6 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
-
 header .name img{
     width: 300px;
     height: 70px;
@@ -54,26 +48,14 @@ header .navigation a:hover{
     color: goldenrod;
 }
 header .redes-sociales{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
+    display: none;
 }
-header .redes-sociales div{
-    margin-top: 20px;
-}
-header .redes-sociales a{
-    padding: 10px 20px;
-    margin: 20px;
-}
-
 
 img.logo{
     height: auto;
    object-fit: cover; 
 }
 /* aqui empieza el modal */
-
 .botonModal{
     background-color: transparent;
   color: inherit;
@@ -85,7 +67,6 @@ img.logo{
   margin-left: 30px;
   
 }
-
 header .modal{
   display: none; 
   z-index: 1;
@@ -98,7 +79,6 @@ header .modal{
   position: fixed;
   top: 15%;
 }
-
 .contenidoModal {
     background-color: #fefefe;
     margin: 15% auto; 
@@ -106,23 +86,19 @@ header .modal{
     border: 1px solid #888;
     width: 50%; 
   }
-  
   .cerrar {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
+  } 
   .cerrar:hover,
   .cerrar:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
-
   /* aqui termina el modal */
-
   /* formulario inicio */
 .formulario{
     display: flex;
@@ -130,18 +106,14 @@ header .modal{
     align-items: center;
     min-width: 50%;
   }
-
 .formulario input{
     width: 50%;
     margin: 5px;
     min-width: 50%;
 }
-
 .formulario input{
     text-align: center;
 }
-
-
 .botonesLogin{
     display: flex;
     justify-content: space-evenly;
@@ -153,23 +125,18 @@ header .modal{
     height: 75px;
     min-width: 50%;
 }
-
 .google{
     height: 75px;
 }
-
 .formulario .google a{
     margin-left: 0;
 }
-
 .google a img{
     object-fit: contain;
     width: 150px;
     height: 50px;
 }
-
 /* formulario fin */
-
 main{
     color: #fff;
     display: flex;
@@ -177,7 +144,6 @@ main{
     flex-direction: column;
     justify-content: flex-start;
 }
-
 .video-pincipal{
     display: flex;
     justify-content: center;
@@ -188,14 +154,12 @@ main{
 .video-pincipal video{
     width: 75%;
 }
-
 .display{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
 .video-container{
     overflow: hidden;
     border: 3px solid #000;
@@ -204,22 +168,18 @@ main{
     height: 150px;
     margin: 3px;
 }
-
 .video-container:hover{
     border: 3px solid goldenrod;
 }
-
 .video-container img{
     width: 100%;
 }
-
 footer{
     background-color: #000;
     color: #fff;
     text-align: center;
     padding: 2em;
 }
-
 footer a{
     color: #fff;
     margin: 10px;
@@ -227,7 +187,6 @@ footer a{
 footer a:hover{
     color: goldenrod;
 }
-
 @media (max-width: 1040px){
 
     header{
@@ -236,6 +195,19 @@ footer a:hover{
     
     header .navigation{
         display: none;
+    }
+    header .redes-sociales{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    header .redes-sociales div{
+        margin-top: 20px;
+    }
+    header .redes-sociales a{
+        padding: 10px 20px;
+        margin: 20px;
     }
 
     header .name img{
