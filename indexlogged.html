@@ -24,24 +24,22 @@
             <div id="modal" class="modal">
                     <div class="contenidoModal">
                         <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                            <form class="formulario" action="./indexlogged.html">
+                            <form class="formulario" action="/login" method="post">
                                 <input type="text" name="username" placeholder="Nombre de usuario" required>
                                 <input type="password" name="password" placeholder="Contraseña" required>
                                 <div class="botonesLogin">
                                     <div>
                                         <button class="google">
-                                            <a href="./indexlogged.html"><i class="fa-brands fa-facebook"></i></a>
+                                            <a href=""><i class="fa-brands fa-facebook"></i></a>
                                         </button>
                                         <button class="google">
-                                            <a href="./indexlogged.html"><i class="fa-brands fa-instagram"></i></a>
+                                            <a href=""><i class="fa-brands fa-instagram"></i></a>
                                         </button>
                                         <button class="google">
-                                            <a href="./indexlogged.html"><i class="fa-brands fa-twitter"></i></a>
+                                            <a href=""><i class="fa-brands fa-twitter"></i></a>
                                         </button>
                                     </div>
-                                    <button class="boton">
-                                        <a href="./indexlogged.html">iniciar Sesion</a>
-                                    </button>
+                                    <input class="boton" type="submit" value="Iniciar sesión">
                                 </div>
                             </form>
                     </div>
@@ -63,7 +61,6 @@
             </div>
         </div>
     </header>
-    
     <section class="video-pincipal">
         <video src="./videos/bc9746a24516b39f13f382636791f6081722702__95218.mp4" controls autoplay muted type="video/mp4"></video>
     </section>
