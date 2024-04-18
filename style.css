@@ -234,8 +234,9 @@ section.video-pincipal{
     border-radius: 5px;
     
 }
-.video-card :hover{
-    border: 3px solid goldenrod;
+.video-card:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
 }
 .video-card h3{
     color: #000;
@@ -276,6 +277,17 @@ footer a{
 }
 footer a:hover{
     color: goldenrod;
+}
+
+.efectoHover:hover{
+    color: goldenrod;
+}
+
+.profileImg{
+    width: 50px;
+    background-color: gray;
+    height: 50px;
+    border-radius: 50px;
 }
 @media (max-width: 1040px){
 

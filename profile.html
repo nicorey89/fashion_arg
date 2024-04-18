@@ -10,32 +10,36 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="profileHeader">
+    <header>
         <a href="https://fashion-arte.vercel.app" class="name">
             <img class="logo" src="./images/logo.png" alt="">
         </a>
+        <div class="search-container">
+            <input type="text" class="search-input" id="search" name="q" placeholder="Buscar...">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+          </div>
         <div class="menu-btn"></div>
         <div class="navigation">
-            <a href="#main">Home</a> 
-                <button class="botonModal" onclick="abrirModal()">Iniciar sesion</button>
-                <div id="modal" class="modal">
-                    <div class="contenidoModal">
-                        <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                            <form class="formulario" action="/login" method="post">
-                                <input type="text" name="username" placeholder="Nombre de usuario" required>
-                                <input type="password" name="password" placeholder="Contraseña" required>
-                                <div class="botonesLogin">
-                                    <button class="google">
-                                        <a href="https://fashion-arte.vercel.app">
-                                            <img src="./images/google.png" alt="">
-                                        </a>
-                                    </button>
-                                    <input class="boton" type="submit" value="Iniciar sesión">
-                                </div>
-                            </form>
-                    </div>
+            <a href="./profile.html">Home</a> 
+            <button class="botonModal" onclick="abrirModal()">
+                <img src="./images/vestido.png" alt="" srcset="" class="profileImg">
+                <p>usuario</p>
+            </button>
+            <a href="https://fashion-arte.vercel.app/profile.html">perfil</a>
+            <div class="redes-sociales">
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+
                 </div>
-            <a href="#">registrate</a>
+                <div>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+                </div>
+            </div>
         </div>
     </header>
     <main id="main" class="main">
@@ -61,20 +65,111 @@
         <h1> mis videos subidos </h1>
         <hr class="linea-negra">
         
-            <section class="display displayPerfil">
+        <section class="display displayPerfil">
+            
+            <div class="video-card">
                 <div class="video-container">
                     <img src="./images/imagen-video.jpg" alt="">
                 </div>
+                <div class="stars-content">
+                    <h3>nombre</h3>
+                    <div class="dress-rating" data-rating="0">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                      </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet alias culpa veniam, quam ducimus.</p>
+            </div>
+            <div class="video-card">
                 <div class="video-container">
                     <img src="./images/imagen-video.jpg" alt="">
                 </div>
+                <div class="stars-content">
+                    <h3>nombre</h3>
+                    <div class="dress-rating" data-rating="0">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                      </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet alias culpa veniam, quam ducimus.</p>
+            </div>
+            <div class="video-card">
                 <div class="video-container">
                     <img src="./images/imagen-video.jpg" alt="">
                 </div>
+                <div class="stars-content">
+                    <h3>nombre</h3>
+                    <div class="dress-rating" data-rating="0">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                      </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet alias culpa veniam, quam ducimus.</p>
+            </div>
+        </section>
+
+        <h1> mis videos favoritos </h1>
+        <hr class="linea-negra">
+        
+        <section class="display displayPerfil">
+            <div class="video-card">
                 <div class="video-container">
                     <img src="./images/imagen-video.jpg" alt="">
                 </div>
-            </section>
+                <div class="stars-content">
+                    <h3>nombre</h3>
+                    <div class="dress-rating" data-rating="0">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                      </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet alias culpa veniam, quam ducimus.</p>
+            </div>
+            <div class="video-card">
+                <div class="video-container">
+                    <img src="./images/imagen-video.jpg" alt="">
+                </div>
+                <div class="stars-content">
+                    <h3>nombre</h3>
+                    <div class="dress-rating" data-rating="0">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                      </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet alias culpa veniam, quam ducimus.</p>
+            </div>
+            <div class="video-card">
+                <div class="video-container">
+                    <img src="./images/imagen-video.jpg" alt="">
+                </div>
+                <div class="stars-content">
+                    <h3>nombre</h3>
+                    <div class="dress-rating" data-rating="0">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                        <img src="./images/vestido.png" alt="Vestido hueco" class="dress">
+                      </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti amet alias culpa veniam, quam ducimus.</p>
+            </div>
+        </section>
         
     </main>
     <footer class="footerPerfil">
