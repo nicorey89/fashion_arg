@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icono.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="https://fashion-arte.vercel.app" class="name">
+            <img class="logo" src="./images/logo.png" alt="">
+        </a>
+        <div class="search-container">
+            <input type="text" class="search-input" id="search" name="q" placeholder="Buscar...">
+            <div class="search-icon"><i class="fas fa-search"></i></div>
+          </div>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <a href="./index.html">Home</a> 
+            <button class="botonModal efectoHover" onclick="abrirModal()">Iniciar Sesion</button>
+            <div id="modal" class="modal">
+                    <div class="contenidoModal">
+                        <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                            <form class="formulario" action="./indexlogged.html">
+                                <input type="text" name="username" placeholder="Nombre de usuario" required>
+                                <input type="password" name="password" placeholder="Contraseña" required>
+                                <div class="botonesLogin">
+                                    <div>
+                                        <button class="google">
+                                            <a href="./indexlogged.html"><i class="fa-brands fa-facebook"></i></a>
+                                        </button>
+                                        <button class="google">
+                                            <a href="./indexlogged.html"><i class="fa-brands fa-instagram"></i></a>
+                                        </button>
+                                        <button class="google">
+                                            <a href="./indexlogged.html"><i class="fa-brands fa-twitter"></i></a>
+                                        </button>
+                                    </div>
+                                    <button class="boton">
+                                        <a href="./indexlogged.html">iniciar Sesion</a>
+                                    </button>
+                                </div>
+                            </form>
+                    </div>
+            </div>
+            <a href="https://fashion-arte.vercel.app/profile.html">Perfil</a>
+            <div class="redes-sociales">
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+                </div>
+                <div>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="video-pincipal">
+        <video src="./videos/bc9746a24516b39f13f382636791f6081722702__95218.mp4" controls autoplay muted type="video/mp4"></video>
+    </section>
+
+    <form class="form-suscribite" action="">
+        <input type="text" placeholder="example@mail.com">
+        <button type="submit">Suscribite</button>
+    </form>
+    <footer>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
